@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Zap, ArrowRight, Layout } from "lucide-react";
+import { Menu, X, Earth, ArrowRight, Layout } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
@@ -31,10 +31,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between">
-        {/* Brand */}
+        
         <Link href="/" className="flex items-center gap-2.5 group shrink-0">
           <div className="w-9 h-9 rounded-xl animated-gradient flex items-center justify-center shadow-md shadow-purple-500/25">
-            <Zap size={18} className="text-white" />
+            <Earth size={20} className="text-white" />
           </div>
           <span className="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
             Echo<span className="gradient-text font-black">GPT</span>
@@ -74,7 +74,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/app"
-            className="animated-gradient text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl hover:opacity-95 transition-all shadow-md shadow-purple-600/30 flex items-center gap-1.5"
+            className="bg-sky-500/40 text-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl hover:opacity-95 transition-all shadow-md shadow-purple-600/30 flex items-center gap-1.5"
           >
             <Layout size={15} />
             <span>Launch Web App</span>

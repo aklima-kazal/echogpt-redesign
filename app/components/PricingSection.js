@@ -207,7 +207,7 @@ export default function PricingSection() {
                     onClick={() => handleOpenModal(plan.modalTarget)}
                     className={`w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold text-center transition-all flex items-center justify-center gap-2 cursor-pointer ${
                       plan.popular
-                        ? "animated-gradient text-white shadow-lg shadow-purple-600/30 hover:opacity-95"
+                        ? "bg-sky-500/40 text-white shadow-lg shadow-purple-600/30 hover:opacity-95"
                         : "glass-pill text-white hover:bg-white/15 border border-white/20"
                     }`}
                   >

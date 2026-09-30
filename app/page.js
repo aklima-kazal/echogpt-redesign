@@ -8,6 +8,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import FAQSection from "./components/FAQSection";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
+import StatsCounter from "./components/StatsCounter";
 
 export default function LandingPage() {
   return (
@@ -15,6 +16,7 @@ export default function LandingPage() {
       <Navbar />
       <main className="flex-1 w-full overflow-x-hidden">
         <HeroSection />
+        <StatsCounter/>
         <FeaturesSection />
         <ModelsSection />
         <WhyChooseSection />

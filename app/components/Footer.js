@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Zap, ExternalLink, ShieldCheck, Heart } from "lucide-react";
+import { Earth, ExternalLink, ShieldCheck, Heart } from "lucide-react";
 
 const footerLinks = {
   Product: [
@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-xl animated-gradient flex items-center justify-center">
-                <Zap size={16} className="text-white" />
+                <Earth size={20} className="text-white" />
               </div>
               <span className="text-xl font-bold tracking-tight text-white">
                 Echo<span className="gradient-text font-black">GPT</span>

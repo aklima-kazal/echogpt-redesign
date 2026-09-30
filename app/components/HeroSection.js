@@ -10,8 +10,13 @@ import {
   Copy,
   Check,
   ShieldCheck,
+  Earth,
 } from "lucide-react";
 import { useState } from "react";
+import StatsCounter from "./StatsCounter";
+
+
+
 
 export default function HeroSection() {
   const [activeModel, setActiveModel] = useState("GPT-4o");
@@ -39,16 +44,16 @@ export default function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Release badge */}
-        <div className="inline-flex items-center gap-2 glass-pill rounded-full px-4 py-1.5 mb-6 text-xs sm:text-sm text-purple-200">
+        <div className="inline-flex items-center gap-2 glass-pill rounded-full px-4 py-1.5 mb-6 text-xs sm:text-sm text-indigo-500">
           <Sparkles size={14} className="text-purple-400 shrink-0" />
           <span>Next-Gen Multi-AI Workspace — GPT-4o, Claude 3.5 & Gemini</span>
         </div>
 
         {/* Hero headline without breaking text collision */}
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight sm:leading-tight">
-          One unified chat for{" "}
-          <span className="gradient-text">every frontier AI model</span>
+        <h1 className="text-3xl sm:text-5xl lg:text-[40px] mb-2 font-bold tracking-tight text-white max-w-4xl mx-auto leading-tight sm:leading-tight">
+          Hello There! 👋 How can I assist you today?
         </h1>
+          <span className="text-blue-800 text-md font-medium ">Your personal AI assistant is ready to help—ask me anything, anytime.</span>
 
         {/* Subtitle with high contrast and readable line-height */}
         <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mt-5 leading-relaxed">
@@ -57,10 +62,10 @@ export default function HeroSection() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 mt-8">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 mt-8 ">
           <Link
             href="/app"
-            className="w-full sm:w-auto animated-gradient text-white font-semibold px-7 py-3.5 rounded-xl inline-flex items-center justify-center gap-2.5 shadow-lg shadow-purple-600/30 hover:opacity-95 transition-all text-sm sm:text-base"
+            className="w-full sm:w-auto bg-sky-500/40 text-white font-semibold px-7 py-3.5 rounded-xl inline-flex items-center justify-center gap-2.5 shadow-md shadow-sky-600/30 hover:opacity-95 transition-all text-sm sm:text-base"
           >
             <MessageSquare size={17} />
             <span>Launch Web App (Free)</span>
@@ -89,25 +94,7 @@ export default function HeroSection() {
           </span>
         </div>
 
-        {/* Social Proof Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto mt-12 py-5 px-6 glass-card rounded-2xl text-center">
-          <div>
-            <div className="text-2xl sm:text-3xl font-extrabold gradient-text">500K+</div>
-            <div className="text-xs text-slate-400 mt-1 font-medium">Global Users</div>
-          </div>
-          <div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-white">10+</div>
-            <div className="text-xs text-slate-400 mt-1 font-medium">Frontier Models</div>
-          </div>
-          <div>
-            <div className="text-2xl sm:text-3xl font-extrabold gradient-text">&lt; 300ms</div>
-            <div className="text-xs text-slate-400 mt-1 font-medium">Avg Latency</div>
-          </div>
-          <div>
-            <div className="text-2xl sm:text-3xl font-extrabold text-white">4.9 / 5</div>
-            <div className="text-xs text-slate-400 mt-1 font-medium">Store Rating</div>
-          </div>
-        </div>
+        <StatsCounter />
 
         {/* Product Preview Mockup */}
         <div className="mt-14 max-w-5xl mx-auto text-left">
@@ -159,7 +146,7 @@ export default function HeroSection() {
                 <div className="glass-card bg-[#141422] border border-white/10 rounded-2xl rounded-tl-sm p-4 text-xs sm:text-sm text-slate-200 max-w-2xl w-full space-y-3">
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="font-semibold text-purple-400 text-xs flex items-center gap-1.5">
-                      <Zap size={13} /> {activeModel} Response
+                      <Earth size={13} /> {activeModel} Response
                     </span>
                     <button
                       onClick={handleCopy}
@@ -189,7 +176,7 @@ export default function HeroSection() {
                 </span>
                 <Link
                   href="/app"
-                  className="animated-gradient text-white text-xs font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1 shrink-0 hover:opacity-90"
+                  className="bg-sky-500/40 text-white text-xs font-semibold px-3 py-1.5 rounded-lg flex items-center gap-1 shrink-0 hover:opacity-90"
                 >
                   <span>Try It Live</span>
                   <ArrowRight size={12} />

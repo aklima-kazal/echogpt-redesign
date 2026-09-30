@@ -16,7 +16,7 @@ const testimonials = [
     company: "CloudScale",
     avatar: "ML",
     text: "The Chrome extension is game-changing. Highlighting code directly inside GitHub pull requests and getting an instant multi-model explanation has supercharged my code review workflow.",
-    rating: 5,
+    rating: 4,
   },
   {
     name: "Priya S.",
@@ -32,7 +32,7 @@ const testimonials = [
     company: "Nexus Labs",
     avatar: "JT",
     text: "The free tier is surprisingly capable, and upgrading to Pro was an easy choice. Having unified history and instant switching between models is worth 10x the subscription price.",
-    rating: 5,
+    rating: 3,
   },
   {
     name: "Aisha R.",
@@ -48,7 +48,7 @@ const testimonials = [
     company: "DevGuides",
     avatar: "DC",
     text: "Clean dark UI, blazing fast response speeds, and no API keys required. I have tested dozens of multi-AI tools and EchoGPT is by far the most polished experience.",
-    rating: 5,
+    rating: 4,
   },
 ];
 
@@ -58,7 +58,7 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="text-purple-400 text-xs sm:text-sm font-semibold uppercase tracking-wider px-3 py-1 rounded-full glass-pill">
+          <span className="text-purple-400 text-xs sm:text-sm font-semibold uppercase tracking-wider px-3 py-1 rounded-full glass-pill  inset-ring-1 inset-ring-blue-500/50">
             Community Feedback
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight leading-snug">
@@ -85,13 +85,13 @@ export default function TestimonialsSection() {
                 </div>
 
                 <p className="text-slate-200 text-xs sm:text-sm leading-relaxed mb-6 italic">
-                  &ldquo;{t.text}&rdquo;
+                  "{t.text}"
                 </p>
               </div>
 
               {/* Author footer */}
               <div className="flex items-center gap-3 pt-4 border-t border-white/5">
-                <div className="w-10 h-10 rounded-full animated-gradient flex items-center justify-center text-white text-xs font-bold shrink-0 shadow-md">
+                <div className="w-10 h-10 rounded-full  bg-sky-500/75 flex items-center justify-center text-white text-xs font-bold shrink-0 shadow-lg">
                   {t.avatar}
                 </div>
                 <div className="min-w-0">

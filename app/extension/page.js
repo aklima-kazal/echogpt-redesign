@@ -23,6 +23,7 @@ import {
   ShieldCheck,
   Star,
   Layers,
+  Earth,
 } from "lucide-react";
 
 const EXTENSION_MODELS = [
@@ -115,7 +116,7 @@ export default function ExtensionConceptPage() {
               href="https://chromewebstore.google.com/detail/echogpt-multi-ai-chat-sid/negimdcamohmoheiifgecbjgjepkcfhj"
               target="_blank"
               rel="noopener noreferrer"
-              className="animated-gradient text-white font-bold px-4 py-2 rounded-xl inline-flex items-center gap-1.5 text-xs sm:text-sm shadow-md shadow-purple-600/30 hover:opacity-95 transition-all"
+              className="bg-sky-500/40 text-white font-bold px-4 py-2 rounded-xl inline-flex items-center gap-1.5 text-xs sm:text-sm shadow-md shadow-purple-600/30 hover:opacity-95 transition-all"
             >
               <span>Chrome Web Store</span>
               <ExternalLink size={14} />
@@ -269,7 +270,7 @@ export default function ExtensionConceptPage() {
                 <div className="p-3.5 border-b border-white/10 bg-[#131322] flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 rounded-lg animated-gradient flex items-center justify-center">
-                      <Zap size={13} className="text-white" />
+                       <Earth size={20} className="text-white" />
                     </div>
                     <span className="font-bold text-xs sm:text-sm text-white">
                       EchoGPT Sidebar
@@ -466,7 +467,7 @@ export default function ExtensionConceptPage() {
                   />
                   <button
                     onClick={() => handleSendPrompt()}
-                    className="p-1.5 rounded-lg animated-gradient text-white hover:opacity-90 shrink-0"
+                    className="p-1.5 rounded-lg bg-sky-500/40 text-white hover:opacity-90 shrink-0"
                     title="Send Prompt"
                   >
                     <Send size={12} />

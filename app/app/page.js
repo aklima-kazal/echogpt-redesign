@@ -24,6 +24,7 @@ import {
   Check,
   Search,
   SlidersHorizontal,
+  Earth,
 } from "lucide-react";
 
 const AI_MODELS = [
@@ -290,7 +291,7 @@ export default function EchoGPTWebApp() {
         <div className="p-4 border-b border-white/10 flex items-center justify-between gap-2">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-xl animated-gradient flex items-center justify-center shadow-md">
-              <Zap size={16} className="text-white" />
+               <Earth size={20} className="text-white" />
             </div>
             <span className="font-extrabold text-base tracking-tight text-white">
               Echo<span className="gradient-text font-black">GPT</span>
